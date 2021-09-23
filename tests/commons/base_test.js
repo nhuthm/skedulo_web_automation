@@ -20,11 +20,8 @@ beforeSpec(async () => {
       '--max_old_space_size=4096'
     ],
   })
-  // let randomfileName = "output"+faker.random.number()+".gif";
-  // await screencast.startScreencast("abc.gif");
 })
 
 afterSpec(async () => {
-  // await screencast.stopScreencast();
   await closeBrowser()
 })
