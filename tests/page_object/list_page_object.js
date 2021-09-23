@@ -13,8 +13,16 @@ class ListPage {
         await commons.selectDropDownByName(listPageLocator.dropdown_name, "Discount - high to low")
     }
 
+    async clickOnNewestArrivalsOptionFromDropdownFilter() {
+        await commons.selectDropDownByName(listPageLocator.sort_by_dropdown_name, "Newest Arrivals")
+    }
+
     async clickToViewItemAtPositionInTheList(position) {
         await commons.clickElementByXpathSpecial(printf(listPageLocator.view_item_button_at_position_xpath, position))
+    }
+
+    async clickOnItemAtPositionInTheList(position) {
+        await commons.clickElementByXpathSpecial(printf(listPageLocator.item_at_position_xpath, position))
     }
 }
 module.exports = ListPage

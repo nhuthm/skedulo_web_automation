@@ -5,6 +5,13 @@ const cartPage = new CartPage()
 const commons = require("../commons/commons_action")
 
 /**
+ * Click action
+ */
+step("Click on Cart button to show cart page", async() => {
+    await cartPage.clickOnShowCartButton()
+})
+
+/**
  * Verify action
  */
 step("Verify the price of the <positionNumber> product is <productPrice>", async(positionNumber, productPrice) => {

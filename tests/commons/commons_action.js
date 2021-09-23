@@ -39,6 +39,11 @@ const assert = require("assert")
 
 class baseAction {
 
+    /* Enter action */
+    async enterToFieldByID(ID, value) {
+        await write(value, into(textBox({ id: ID })))
+    }
+
     /* Get action */
     async getText(xpath) {
         return await $(xpath).text()
