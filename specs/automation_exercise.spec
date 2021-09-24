@@ -1,4 +1,4 @@
-# Automation Exercise
+# Automation Exercise - Make an order withour authorization
 
 tags: automation
 
@@ -21,7 +21,17 @@ tags: automation
 * Enter "AAA Batteries" into search textbox field
 * Click on the search button
 * Select an option "Newest Arrivals" from Sort By dropdown
-* Click on the "3rd" product on the list
+* Click on the "4th" product on the list
 * Select "5" items at the Quantity filter
 * Click on Add To Cart button
 * Click on Cart button to show cart page
+* Verify the price of the "1st" product is "$43.50"
+* Verify the price of the "2nd" product is "$29.96"
+* Verify "Subtotal (7 items):" and price is "$277.42"
+
+## Delete one product from cart and proceed to checkout
+* Click on delete at the "2nd" product
+* Verify "Subtotal (5 items):" and price is "$217.50"
+
+* Click on the Proceed To Checkout button
+* Verify page title is "Sign-In"

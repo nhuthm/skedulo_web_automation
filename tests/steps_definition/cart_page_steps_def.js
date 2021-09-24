@@ -11,6 +11,14 @@ step("Click on Cart button to show cart page", async() => {
     await cartPage.clickOnShowCartButton()
 })
 
+step("Click on delete at the <positionNumber> product", async(positionNumber) => {
+    await cartPage.clickOnDeleteButtonAtProductPosition(parseInt(positionNumber, 10))
+})
+
+step("Click on the Proceed To Checkout button", async() => {
+    await cartPage.clickOnProceedToCheckoutButton()
+})
+
 /**
  * Verify action
  */

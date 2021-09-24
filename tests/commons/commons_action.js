@@ -1,37 +1,14 @@
 "use strict";
 const {
   $,
-  above,
-  attach,
-  below,
-  button,
-  clear,
   click,
-  closeTab,
-  dragAndDrop,
   dropDown,
-  doubleClick,
   evaluate,
-  hover,
-  fileField,
-  focus,
   goto,
-  goBack,
   into,
-  link,
-  openTab,
-  press,
-  reload,
-  rightClick,
-  scrollTo,
-  scrollDown,
-  text,
   textBox,
-  to,
-  toRightOf,
   waitFor,
   write,
-  switchTo,
 } = require("taiko");
 const chai = require("chai")
 const expect = chai.expect
@@ -68,6 +45,14 @@ class baseAction {
 
     async clickElementByXpathAndIDSpecial(ID) {
         await click($("//*[@id = '" + ID + "']"),{waitForEvents:['loadEventFired']})
+    }
+
+    async clickElementByXpathAndName(name) {
+        await click($("//*[@name = '" + name + "']"))
+    }
+
+    async clickElementByXpathAndNameSpecial(name) {
+        await click($("//*[@name = '" + name + "']"),{waitForEvents:['loadEventFired']})
     }
     
     /* Navigate action */
