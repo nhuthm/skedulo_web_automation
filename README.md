@@ -1,4 +1,4 @@
-[Gauge](https://github.com/getgauge/gauge) + [Taiko](https://github.com/getgauge/taiko) test framework uses for this exercise
+[Gauge](https://github.com/getgauge/gauge) + [Taiko](https://github.com/getgauge/taiko) test framework uses for Shopping cart Amazon
 
 ## Prerequisite
 
